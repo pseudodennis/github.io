@@ -1,0 +1,31 @@
+/*
+        https://uxplanet.org/how-to-customize-bootstrap-b8078a011203
+*/
+
+@import "../node_modules/bootstrap/scss/functions"; 
+@import "../node_modules/bootstrap/scss/variables";
+
+
+// Variable overrides
+$body-bg: white;
+$purple: lime;
+
+$theme-colors: (
+//   "primary":    ..,
+//   "secondary":  ..,
+//   "success":    ..,
+//   "info":       ..,
+//   "warning":    ..,
+//   "danger":     ..,
+//   "light":      ..,
+//   "dark":       ..
+    purple: $purple
+);
+
+
+// Bootstrap and its default variables
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+// New variables
+$magenta: magenta;
