@@ -25,10 +25,34 @@
 
     <div class="container mt-5 px-5 pt-1" style="background-color: #f3f3f3">
         <header class="mt-5">
-THIS IS A HEADER
+            <p class="display-3">News Finder</p>
+            <p class="lead font-italic">Assignment for CIS-213 using the News API</p>
+            
+            <hr>
         </header>
-        <main class="mb-5 pb-5">
-THIS IS MAIN
+        <main class="mb-5 pb-5">            
+            <form>
+                <div class="form-row">
+                    <div class="col">
+                        <input id="newsQuery" type="text" class="form-control" placeholder="Search terms" required>
+                    </div>
+                    <div class="col-auto">
+                        <input id="numberOfResults" type="number" class="form-control" placeholder="Max" min="1" max="10">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Go</button>
+                </div>
+                <div class="row">
+
+
+
+
+                </div>
+            </form>
+
+            <div id="searchResults">
+
+            </div>
+
 
         </main>
 
