@@ -24,7 +24,7 @@ function getUrlQuery(form) {
     searchParams.set('pageSize', maxResults)
     searchParams.set('sortBy', 'publishedAt')
     searchParams.set('language', 'en')
-    const url = new URL(`http://newsapi.org/v2/everything`)
+    const url = new URL(`https://newsapi.org/v2/everything`)
     url.search = searchParams.toString()
 
     return url
