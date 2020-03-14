@@ -18,7 +18,7 @@ function clearPreviousResults() {
 
 function getUrlQuery(form) {
     let searchTerm = form[0].value
-    let maxResults = form[1].value
+    let maxResults = form[1].value > 0 ? form[1].value : 20
     const searchParams = new URLSearchParams()
     searchParams.set('q', searchTerm)
     searchParams.set('pageSize', maxResults)
