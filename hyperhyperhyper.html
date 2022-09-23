@@ -25,31 +25,36 @@
         
         <div class="mt-5 p-5 pt-1 bg-light">
             <header class="">
-                <p class="display-3">Hyper Cube Adjacency Evaluator</p>
-                <p class="lead font-italic">Assignment for MAT-something</p>                
+                <p class="display-3">Hypercube Adjacency Evaluator</p>
+                <p class="lead font-italic">Assignment for MAT-8790 Graph Theory</p>                
                 <hr>
             </header>
             <main class="">            
-                <form id="newsForm">
+                <form id="hyperForm">
                     <div class="form-row">
-                        <div class="col">
-                            <input id="newsQuery" type="text" class="form-control" placeholder="Search terms" required>
+
+                        <div class="col-2">
+                            <input id="dimension" type="number" class="form-control" placeholder="Dimension" min="2" max="5" required>
                         </div>
+
                         <div class="col-auto">
-                            <input id="numberOfResults" type="number" class="form-control" placeholder="Max" min="1" max="100">
+                            <input id="vertex1" type="text" class="form-control" placeholder="Vertex 1">
                         </div>
+
+                        <div class="col-auto">
+                            <input id="vertex2" type="text" class="form-control" placeholder="Vertex 2">
+                        </div>
+
                         <div class="col-auto">
                             <button type="submit" class="btn btn-primary">Go</button>
                         </div>
                     </div>
                 </form>
-    
-                <div id="newsResults" style="min-height: 50px"></div>
+                <div id="results" style="min-height: 50px"></div>
             </main>
         </div>
                 
         <footer class="px-5 py-2 mb-5">
-            Powered by <a href="https://newsapi.org">News API</a>
         </footer>                
     </div>
 
@@ -64,7 +69,7 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <script src="news.js"></script>
+    <script src="hyper.js"></script>
 
 </body>
 
