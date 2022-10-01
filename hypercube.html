@@ -25,24 +25,17 @@
         
         <div class="mt-5 p-5 pt-1 bg-light">
             <header class="">
-                <p class="display-3">Hypercube Adjacency Evaluator</p>
+                <p class="display-3">Hypercube Generator</p>
                 <p class="lead font-italic">Assignment for MAT-8790 Graph Theory</p>                
                 <hr>
             </header>
-            <main class="">            
+            <main>            
                 <form id="hyperForm">
-                    <div class="form-row">
+                    <div class="form-row align-items-center">
 
-                        <div class="col-2">
-                            <input id="dimension" type="number" class="form-control" placeholder="Dimension" min="2" max="5" required>
-                        </div>
-
-                        <div class="col-auto">
-                            <input id="vertex1" type="text" class="form-control" placeholder="Vertex 1">
-                        </div>
-
-                        <div class="col-auto">
-                            <input id="vertex2" type="text" class="form-control" placeholder="Vertex 2">
+                        <div class="pl-2">Q(m) Hypercube </div>
+                        <div class="col-1">
+                            <input id="dimension" type="number" class="form-control" placeholder="m" min="2" max="12" required>
                         </div>
 
                         <div class="col-auto">
@@ -50,7 +43,12 @@
                         </div>
                     </div>
                 </form>
-                <div id="results" style="min-height: 50px"></div>
+                <div id="cy" style="height:500px; background-color: white;" class="p-5 my-3"></div>
+                <div id="results" class=""></div>
+
+
+
+
             </main>
         </div>
                 
@@ -68,8 +66,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.23.0/cytoscape.min.js" integrity="sha512-gEWKnYYa1/1c3jOuT9PR7NxiVI1bwn02DeJGsl+lMVQ1fWMNvtjkjxIApTdbJ/wcDjQmbf+McWahXwipdC9bGA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="hyper.js"></script>
+
 
 </body>
 
