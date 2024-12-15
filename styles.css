@@ -1,0 +1,72 @@
+body {
+    font-family: 'Hoefler Text', Georgia, Times, 'Times New Roman', serif;
+    font-size: 11px;
+}
+
+p {
+    margin-bottom: 5.5px;
+    line-height: 15px;
+}
+
+span a {
+    margin-right: 4px;
+    font-size: 10px;
+    color: #a9a9a9;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 0px;
+    line-height: 1.5rem;
+}
+
+h2 {
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 32px 0px 12px 0px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #a9a9a9;
+}
+
+h3 {
+    font-size: 13px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+    margin-top: 18px;
+}
+
+h4 {
+    font-size: 13px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 4px;
+}
+
+ul {
+    padding-left: 0rem;
+    list-style-type: none;
+}
+
+ul li {
+    padding-left: 1rem;
+    background-image: url(bullet.svg);
+    background-position: 0px 3px;
+    background-size: 0.5rem 0.5rem;
+    background-repeat: no-repeat;
+}
+
+ul.non-bullet li{
+    background-image: none;
+    padding-left: 0rem;
+}
+
+.intro {
+    margin-top: 18px;
+}
+
+.bottom-space {
+    margin-bottom: 128px;
+}
